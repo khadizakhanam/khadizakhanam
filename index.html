@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cat Website</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Playwrite+ES+Deco+Guides&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="dist/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    
+ 
+    <script src="https://cdn.tailwindcss.com"></script>
+
+  </head>
+  <body >
+    <!-- Top bar -->
+    <div class="container mx-auto p-8">
+      <div class="justify-between flex md:justify-between w-full">
+        <div>
+          <img
+            src="Logo_meowville-q79dyqkzjwwdq52e2j15orz4o5oj68plnsvfchcjr4.png"
+          />
+        </div>
+        <div>
+          <ul class="hidden md:flex space-x-10 items-center text-lg">
+            <li class="text-pink-700">Home</li>
+            <li class="hover:text-pink-700">About us</li>
+            <li class="relative group z-20">
+              <a
+                href="#home"
+                class="inline-flex items-center space-x-2 hover:text-pink-700"
+              >
+                <span>Services</span>
+                <i class="fa-solid fa-angle-down"></i>
+              </a>
+              <ul
+                class="absolute left-0 hidden mt-2 space-y-2 bg-white border border-gray-200 shadow-lg group-hover:block w-32 text-center"
+              >
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100"></a
+                  >Adoption List
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100"></a
+                  >Pricing Plan
+                </li>
+              </ul>
+            </li>
+            <li class="relative group z-20">
+              <a
+                href="#home"
+                class="inline-flex items-center space-x-2 hover:text-pink-700"
+              >
+                <span>Contact us</span>
+              </a>
+            </li>
+
+            <li class="relative group z-20">
+              <a
+                href="#home"
+                class="inline-flex items-center space-x-2 hover:text-pink-700"
+              >
+                <span>pages</span>
+                <i class="fa-solid fa-angle-down"></i>
+              </a>
+              <ul
+                class="absolute left-0 hidden mt-2 space-y-2 bg-white border border-gray-200 shadow-lg group-hover:block text-center w-28"
+              >
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                    >Gallery</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100"></a>FAQ
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100"></a>Blog
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100"></a
+                  >Single Post
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100"></a
+                  >Error 404
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="hidden md:flex space-x-4 items-center">
+          <i class="fa-solid fa-magnifying-glass hover:text-pink-400"></i>
+          <button
+            class="bg-[#b562a8] text-white px-5 py-2.5 rounded-full hover:bg-pink-400"
+          >
+            AVAILABLE KITTENS!!
+          </button>
+        </div>
+        <div class="md:hidden">
+          <button class="nav-taggle">
+            <i class="fa-solid fa-bars text-3xl hover:text-pink-400"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Slider -->
+    <div class="swiper sliderSwiper">
+      <div
+        class="relative left-3 md:left-40 z-50"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+      >
+        <div class="absolute top-44">
+          <p
+            class="text-center text-7xl md:text-left md:text-8xl text-white font-amatic font-extrabold md:leading-[111px]"
+          >
+            WHERE CATS'<br />
+            DREAMS COME TRUE
+          </p>
+          <p class="w-full font-bold text-white md:w-[580px] py-7">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </p>
+          <button
+            class="w-[95%] md:w-auto bg-[#b562a8] text-white px-8 py-4 rounded-full text-sm hover:bg-pink-400"
+          >
+            LEARN MORE
+          </button>
+        </div>
+      </div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide bg-black">
+          <img
+            class="w-full h-[777px] opacity-[0.5]"
+            src="HomepageMeowville/tabby-kitten-lies-in-an-embrace-with-a-soft-teddy-bear-toy-on-the-bed-the-cat-sleeps-on-the-sofa.jpg"
+          />
+        </div>
+        <div class="swiper-slide bg-black">
+          <img
+            class="w-full h-[777px] opacity-[0.5]"
+            src="HomepageMeowville/tabby-gray-striped-cat-relaxes-on-bed.jpg"
+          />
+        </div>
+        <div class="swiper-slide bg-black">
+          <img
+            class="w-full h-[777px] opacity-[0.5]"
+            src="HomepageMeowville/cat-watching.jpg"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Statistic  -->
+    <div class="relative h-auto md:h-[310px] z-50">
+      <div
+        class="flex-col py-3 justify-center items-center mx-auto md:flex-row flex gap-6 md:justify-center md:absolute -top-[111px]"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+      >
+        <div
+          class="h-full w-[70%] md:flex-row bg-[#f9f1e7] justify-items-center space-y-8 p-8 md:w-[25%] md:h-96 rounded-3xl"
+        >
+          <i class="fa-solid fa-paw text-[50px] text-[#ff7f50]"></i>
+
+          <p class="text-4xl font-amatic font-extrabold">PET ADOPTION</p>
+
+          <p class="text-[#656466]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </p>
+
+          <button
+            class="bg-[#b562a8] text-white px-4 py-1.5 rounded-full text-sm hover:bg-pink-400"
+          >
+            LEARN MORE
+          </button>
+        </div>
+        <div
+          class="h-full w-[70%] md:flex-row bg-[#b562a8] justify-items-center space-y-8 p-8 md:w-[25%] md:h-96 rounded-3xl"
+        >
+          <i class="fa-solid fa-cat text-[50px] text-white"></i>
+
+          <p class="text-4xl font-amatic font-extrabold text-white">
+            CAT SHELTER
+          </p>
+
+          <p class="text-white">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </p>
+          <button
+            class="bg-white text-[#b562a8] px-4 py-1.5 rounded-full text-sm hover:bg-pink-400 hover:text-white"
+          >
+            LEARN MORE
+          </button>
+        </div>
+        <div
+          class="h-full w-[70%] md:flex-row bg-[#f9f1e7] justify-items-center space-y-8 p-8 md:w-[25%] md:h-96 rounded-3xl"
+        >
+          <i class="fa-solid fa-shop text-[50px] text-[#ff7f50]"></i>
+
+          <p class="text-4xl font-amatic font-extrabold">PET SHOP</p>
+
+          <p class="text-[#656466]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </p>
+          <button
+            class="bg-[#b562a8] text-white px-4 py-1.5 rounded-full text-sm hover:bg-pink-400"
+          >
+            LEARN MORE
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- About  -->
+    <div
+      class="relative flex-col flex gap-6 md:flex-row md:justify-around py-36 bg-[url('HomepageMeowville/bg_img.png')] bg-center w-full h-full"
+    >
+      <!-- Background Overlay -->
+      <div class="absolute inset-0 bg-white opacity-[0.7]"></div>
+      <!-- Adjust opacity here -->
+      <div
+        data-aos="fade-right"
+        data-aos-delay="333"
+        class="text-center md:text-left md:flex-row w-full md:w-[35%] space-y-6 z-10"
+      >
+        <p class="text-[#ff8254] font-bold">WHO WE ARE</p>
+
+        <p class="text-4xl md:text-6xl font-amatic font-extrabold">
+          HELP HOMELESS ANIMALS FIND A FOREVER HOME.
+        </p>
+
+        <p class="text-[#656466]">
+          Aliquam lobortis imperdiet aenean magnis finibus eu potenti nostra
+          sapien natoque. Non dui commodo donec felis quisque velit mauris ipsum
+          per congue. Ullamcorper sodales convallis cras iaculis laoreet
+          nascetur sapien.
+        </p>
+
+        <button
+          class="bg-[#b562a8] text-white px-4 py-1.5 rounded-full text-sm hover:bg-pink-400"
+        >
+          DISCOVER MORE
+        </button>
+      </div>
+      <div
+        class="w-full flex justify-center md:block md:w-[35%]"
+        data-aos="flip-right"
+      >
+        <div class="relative">
+          <div class="absolute">
+            <img
+              class="h[200px] w-[300px] md:h-[350px] md:w-[500px]"
+              src="HomepageMeowville/bg_6.png"
+            />
+          </div>
+          <div
+            class="h-[275px] w-[300px] [mask-size:300px_275px] md:h-[360px] md:w-[500px] md:[mask-size:500px_358px] [mask-repeat:no-repeat] [mask-image:url('HomepageMeowville/bg_3.png')] [mask-position:center]"
+          >
+            <div class="h-full w-full">
+              <img
+                class="h-full w-full object-cover"
+                src="HomepageMeowville/two-funny-curious-young-red-ginger-maine-coon-kittens-cats-sitting-at-home-sofa-coon-cat-maine-cat-1536x1024.jpg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Brand -->
+    <hr class="border-dashed border-[#828083]" />
+    <div class="flex md:justify-center flex-wrap gap-12 p-8">
+      <img src="HomepageMeowville/logo-2-150x100.png" />
+      <img src="HomepageMeowville/logo-3-150x100.png" />
+      <img src="HomepageMeowville/logo-4-150x100.png" />
+      <img src="HomepageMeowville/logo-5-150x100.png" />
+      <img src="HomepageMeowville/logo-11-150x100.png" />
+      <img src="HomepageMeowville/logo-1-150x100.png" />
+    </div>
+    <!-- Service -->
+    <div class="flex-col justify-items-center bg-[#f9f1e7] p-28">
+      <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        <p
+          class="w-full text-3xl leading-10 md:w-[55%] text-center font-amatic font-extrabold md:text-6xl md:leading-[80px] mx-auto"
+        >
+          WE PROVIDE A WAY FOR YOU TO GIVE BACK TO ANIMALS IN NEEDS.
+        </p>
+        <p
+          class="w-full text-sm text-[#656466] p-7 md:text-lg md:w-[68%] mx-auto text-center"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+          tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+        </p>
+      </div>
+      <div
+        class="flex-col md:flex-row flex justify-items-center p-14 space-x-4"
+        data-aos="flip-left"
+        data-aos-delay="350"
+      >
+        <div class="relative">
+          <div class="absolute">
+            <img class="w-[380px] h-[280px]" src="HomepageMeowville/bg_6.png" />
+          </div>
+          <div
+            style="
+              background-color: white;
+              mask-image: url('HomepageMeowville/bg_3.png');
+              mask-position: center;
+              mask-repeat: no-repeat;
+              mask-size: 300px 290px;
+            "
+            class="h-[290px] w-[300px]"
+          >
+            <div
+              class="flex-row justify-items-center space-y-8 p-8 w-full h-full"
+            >
+              <i class="fa-solid fa-paw text-[50px] text-[#ff7f50]"></i>
+
+              <p class="text-4xl font-amatic font-extrabold">CAT ADOPTION</p>
+
+              <p class="text-[#656466]">
+                Fringilla purus enim sodales euismod sociosqu a erat ut dolor
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="absolute">
+            <img class="w-[380px] h-[280px]" src="HomepageMeowville/bg_6.png" />
+          </div>
+          <div
+            style="
+              background-color: #b562a8;
+              mask-image: url('HomepageMeowville/bg_3.png');
+              mask-position: center;
+              mask-repeat: no-repeat;
+              mask-size: 300px 290px;
+            "
+            class="h-[290px] w-[300px]"
+          >
+            <div
+              class="flex-row justify-items-center space-y-8 p-8 w-full h-full"
+            >
+              <i class="fa-solid fa-cat text-[50px] text-white"></i>
+
+              <p class="text-4xl font-amatic font-extrabold text-white">
+                CAT TRAINING
+              </p>
+
+              <p class="text-white">
+                Fringilla purus enim sodales euismod sociosqu a erat ut dolor
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="absolute">
+            <img class="w-[380px] h-[280px]" src="HomepageMeowville/bg_6.png" />
+          </div>
+          <div
+            style="
+              background-color: white;
+              mask-image: url('HomepageMeowville/bg_3.png');
+              mask-position: center;
+              mask-repeat: no-repeat;
+              mask-size: 300px 290px;
+            "
+            class="h-[290px] w-[300px]"
+          >
+            <div
+              class="flex-row justify-items-center space-y-8 p-8 w-full h-full"
+            >
+              <i
+                class="fa-solid fa-hand-holding-medical text-[50px] text-[#ff7f50]"
+              ></i>
+
+              <p class="text-4xl font-amatic font-extrabold">REHABILATATION</p>
+
+              <p class="text-[#656466]">
+                Fringilla purus enim sodales euismod sociosqu a erat ut dolor
+              </p>
+            </div>
+                
+          </div>
+        </div>
+        <div class="relative">
+          <div class="absolute">
+            <img class="w-[380px] h-[280px]" src="HomepageMeowville/bg_6.png" />
+          </div>
+          <div
+            style="
+              background-color: white;
+              mask-image: url('HomepageMeowville/bg_3.png');
+              mask-position: center;
+              mask-repeat: no-repeat;
+              mask-size: 300px 290px;
+            "
+            class="h-[290px] w-[300px]"
+          >
+            <div
+              class="flex-row justify-items-center space-y-8 p-8 w-full h-full"
+            >
+              <i class="fa-solid fa-house text-[50px] text-[#ff7f50]"></i>
+
+              <p class="text-4xl font-amatic font-extrabold">VOLUNTEERS</p>
+
+              <p class="text-[#656466]">
+                Fringilla purus enim sodales euismod sociosqu a erat ut dolor
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Banner1 -->
+    <div
+      class="relative flex flex-col justify-center items-center bg-[url('HomepageMeowville/british-shorthair-cat-stroked-by-a-woman.jpg')] bg-no-repeat bg-center w-full h-[70vh] bg-cover"
+    >
+      <!-- Background Overlay -->
+      <div class="absolute inset-0 bg-black opacity-[0.5]"></div>
+      <!-- Adjust opacity here -->
+      <p
+        class="w-full text-3xl md:w-[45%] text-white text-center font-amatic font-extrabold md:text-6xl md:leading-[70px] mx-auto z-10"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+      >
+        BE INSPIRED TO BRING A HOMELESS DOG, CAT, OR RABBIT INTO YOUR HOME.
+      </p>
+      <p
+        class="w-full p-7 text-lg md:w-[55%] mx-auto font-semibold text-center text-white z-10"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
+        luctus nec ullamcorper mattis, pulvinar dapibus leo.
+      </p>
+      <button
+        class="bg-[#b562a8] text-white px-4 py-1.5 rounded-full text-sm z-10 hover:bg-pink-400"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+      >
+        DISCOVER MORE
+      </button>
+    </div>
+    <!-- Animal  -->
+    <div class="flex-col justify-items-center bg-[#f9f1e7] p-16">
+      <p
+        class="text-[#ff8254] font-bold leading-[80px]"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+      >
+        READY BECOME YOUR FAMILY
+      </p>
+      <p
+        class="w-full text-3xl md:w-[45%] text-center font-amatic font-extrabold md:text-6xl md:leading-[80px] mx-auto"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+      >
+        SAVING ONE AMNIMAL WILL CHANGE YOUR LIFE FOREVER.
+      </p>
+      <p
+        class="w-full text-[#656466] p-7 text-lg md:w-[55%] mx-auto text-center"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
+        luctus nec ullamcorper mattis, pulvinar dapibus leo.
+      </p>
+      <div
+        class="flex-col md:flex-row flex flex-wrap justify-center py-5 gap-7 w-[100%]"
+        data-aos="zoom-in-up"
+        data-aos-duration="1000"
+      >
+        <div class="w-[100%] bg-white md:w-[28%] rounded-2xl overflow-hidden">
+          <div class="relative group overflow-hidden h-[58%]">
+            <div
+              class="absolute inset-0 flex flex-col justify-end p-6 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"
+            >
+              <p class="text-white font-amatic text-4xl font-semibold">BRUNO</p>
+              <br />
+              <p class="text-white">Playful and affectionate</p>
+            </div>
+            <img
+              class="w-full h-full object-cover transition-transform duration-300 transform group-hover:scale-125"
+              src="HomepageMeowville/cute-grey-cat.jpg"
+            />
+          </div>
+
+          <p class="text-[#ff8254] font-semibold px-5 leading-[50px]">
+            AGE : 2 YEARS
+          </p>
+          <p class="font-amatic text-4xl font-semibold px-5 text-[#5a5a5d]">
+            DOMESTIC SHORTHAIR
+          </p>
+          <p class="text-[#5a5a5d] px-5 py-3 md:w-[380px] font-semibold">
+            Suspendisse arcu facilisis elit cursus vulputate maecenas accumsan.
+            Condimentum gravida consectetur himenaeos conubia ex.
+          </p>
+          <div class="py-2 px-4">
+            <button
+              class="bg-[#b562a8] text-white px-5 font-semibold py-1.5 rounded-full text-xs hover:bg-pink-400"
+            >
+              READ MORE
+            </button>
+          </div>
+        </div>
+        <div class="w-[100%] bg-white md:w-[28%] rounded-2xl overflow-hidden">
+          <div class="relative group overflow-hidden h-[58%]">
+            <div
+              class="absolute inset-0 flex flex-col justify-end p-6 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"
+            >
+              <p class="text-white font-amatic text-4xl font-semibold">
+                OLIVER
+              </p>
+              <br />
+              <p class="text-white">Gentle and friendly</p>
+            </div>
+            <img
+              class="w-full h-full object-cover transition-transform duration-300 transform group-hover:scale-125"
+              src="HomepageMeowville/cute-grey-cat-1.jpg"
+            />
+          </div>
+          <p class="text-[#ff8254] font-semibold px-5 leading-[50px]">
+            AGE : 3 YEARS
+          </p>
+          <p class="font-amatic text-4xl font-semibold px-5 text-[#5a5a5d]">
+            DOMESTIC SHORTHAIR
+          </p>
+          <p class="text-[#5a5a5d] px-5 py-3 md:w-[380px] font-semibold">
+            Suspendisse arcu facilisis elit cursus vulputate maecenas accumsan.
+            Condimentum gravida consectetur himenaeos conubia ex.
+          </p>
+          <div class="py-2 px-4">
+            <button
+              class="bg-[#b562a8] text-white px-5 font-semibold py-1.5 rounded-full text-xs hover:bg-pink-400"
+            >
+              READ MORE
+            </button>
+          </div>
+        </div>
+        <div class="w-[100%] bg-white md:w-[28%] rounded-2xl overflow-hidden">
+          <div class="relative group overflow-hidden h-[58%]">
+            <div
+              class="absolute inset-0 flex flex-col justify-end p-6 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"
+            >
+              <p class="text-white font-amatic text-4xl font-semibold">BELLA</p>
+              <br />
+              <p class="text-white">Calm and docile</p>
+            </div>
+            <img
+              class="w-full h-full object-cover transition-transform duration-300 transform group-hover:scale-125"
+              src="HomepageMeowville/cute-cat-with-narrowed-eyes-against-background-of-white-wall-in-apartment-close-up.jpg"
+            />
+          </div>
+          <p class="text-[#ff8254] font-semibold px-5 leading-[50px]">
+            AGE : 2.5 YEARS
+          </p>
+          <p class="font-amatic text-4xl font-semibold px-5 text-[#5a5a5d]">
+            MAINE COON
+          </p>
+          <p class="text-[#5a5a5d] px-5 py-3 md:w-[380px] font-semibold">
+            Suspendisse arcu facilisis elit cursus vulputate maecenas accumsan.
+            Condimentum gravida consectetur himenaeos conubia ex.
+          </p>
+          <div class="px-4 py-2">
+            <button
+              class="bg-[#b562a8] text-white px-5 font-semibold py-1.5 rounded-full text-xs hover:bg-pink-400"
+            >
+              READ MORE
+            </button>
+          </div>
+        </div>
+        <div class="w-[100%] bg-white md:w-[28%] rounded-2xl overflow-hidden">
+          <div class="relative group overflow-hidden h-[58%]">
+            <div
+              class="absolute inset-0 flex flex-col justify-end p-6 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"
+            >
+              <p class="text-white font-amatic text-4xl font-semibold">SIMBA</p>
+              <br />
+              <p class="text-white">Energetic and curious</p>
+            </div>
+            <img
+              class="w-full h-full object-cover transition-transform duration-300 transform group-hover:scale-125"
+              src="HomepageMeowville/front-view-of-a-grumpuy-persian-cat-sitting-looking-at-the-camera-on-a-orange-background.jpg"
+            />
+          </div>
+          <p class="text-[#ff8254] font-semibold px-5 leading-[50px]">
+            AGE : 3.7 YEARS
+          </p>
+          <p class="font-amatic text-4xl font-semibold px-5 text-[#5a5a5d]">
+            GRUMPY PERSIAN
+          </p>
+          <p class="text-[#5a5a5d] px-5 py-3 md:w-[380px] font-semibold">
+            Suspendisse arcu facilisis elit cursus vulputate maecenas accumsan.
+            Condimentum gravida consectetur himenaeos conubia ex.
+          </p>
+          <div class="px-4 py-2">
+            <button
+              class="bg-[#b562a8] text-white px-5 font-semibold py-1.5 rounded-full text-xs hover:bg-pink-400"
+            >
+              READ MORE
+            </button>
+          </div>
+        </div>
+        <div class="w-[100%] bg-white md:w-[28%] rounded-2xl overflow-hidden">
+          <div class="relative group overflow-hidden h-[58%]">
+            <div
+              class="absolute inset-0 flex flex-col justify-end p-6 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"
+            >
+              <p class="text-white font-amatic text-4xl font-semibold">MILO</p>
+              <br />
+              <p class="text-white">Gentle and friendly</p>
+            </div>
+            <img
+              class="w-full h-full object-cover transition-transform duration-300 transform group-hover:scale-125"
+              src="HomepageMeowville/adorable-young-ginger-cat-with-white-fur-and-curious-face.jpg"
+            />
+          </div>
+          <p class="text-[#ff8254] font-semibold px-5 leading-[50px]">
+            AGE : 3 YEARS
+          </p>
+          <p class="font-amatic text-4xl font-semibold px-5 text-[#5a5a5d]">
+            DOMESTIC LONGHAIR
+          </p>
+          <p class="text-[#5a5a5d] px-5 py-3 md:w-[380px] font-semibold">
+            Suspendisse arcu facilisis elit cursus vulputate maecenas accumsan.
+            Condimentum gravida consectetur himenaeos conubia ex.
+          </p>
+          <div class="px-4 py-2">
+            <button
+              class="bg-[#b562a8] text-white px-5 font-semibold py-1.5 rounded-full text-xs hover:bg-pink-400"
+            >
+              READ MORE
+            </button>
+          </div>
+        </div>
+        <div class="w-[100%] bg-white md:w-[28%] rounded-2xl overflow-hidden">
+          <div class="relative group overflow-hidden h-[58%]">
+            <div
+              class="absolute inset-0 flex flex-col justify-end p-6 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"
+            >
+              <p class="text-white font-amatic text-4xl font-semibold">CHLOE</p>
+              <br />
+              <p class="text-white">Calm and docile</p>
+            </div>
+            <img
+              class="w-full h-full object-cover transition-transform duration-300 transform group-hover:scale-125"
+              src="HomepageMeowville/ragamuffin-cat.jpg"
+            />
+          </div>
+          <p class="text-[#ff8254] font-semibold px-5 leading-[50px]">
+            AGE : 2.5 YEARS
+          </p>
+          <p class="font-amatic text-4xl font-semibold px-5 text-[#5a5a5d]">
+            RAGAMUFFIN
+          </p>
+          <p class="text-[#5a5a5d] px-5 py-3 md:w-[380px] font-semibold">
+            Suspendisse arcu facilisis elit cursus vulputate maecenas accumsan.
+            Condimentum gravida consectetur himenaeos conubia ex.
+          </p>
+          <div class="px-4 py-2">
+            <button
+              class="bg-[#b562a8] text-white px-5 font-semibold py-1.5 rounded-full text-xs hover:bg-pink-400"
+            >
+              READ MORE
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About-2  -->
+    <div
+      class="flex-col gap-8 md:flex-row flex justify-around p-10 bg-[url('HomepageMeowville/dashed.png')] bg-no-repeat bg-center w-full"
+    >
+      <div data-aos="fade-right" data-aos-delay="333">
+        <img
+          class="w-[90%] bg-[#f9f1e7]"
+          style="clip-path: polygon(12% 13%, 100% 0, 90% 99%, 0 93%)"
+          src="HomepageMeowville/img_3.png"
+        />
+      </div>
+      <div class="flex flex-col gap-6" data-aos="flip-right">
+        <p class="text-3xl font-amatic md:text-6xl font-semibold md:w-[500px]">
+          THERE ARE SHELTERS, THERE IS HOPE!
+        </p>
+        <p class="text-[#5a5a5d] md:w-[500px] font-semibold">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+          tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+        </p>
+        <div class="bg-[#f9f1e7] p-7 rounded-3xl flex gap-5">
+          <div>
+            <i class="fa-solid fa-paw text-[30px] py-2 text-[#ff7f50]"></i>
+          </div>
+          <div>
+            <div>
+              <p class="font-amatic text-2xl font-semibold">OUR VISION</p>
+            </div>
+            <div>
+              <p class="text-[#5a5a5d] md:w-[400px] font-semibold">
+                To create a compassionate world where every cat is valued,
+                loved, and provided with a safe and nurturing home.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-[#f9f1e7] p-7 rounded-3xl flex gap-5">
+          <div>
+            <i class="fa-solid fa-cat text-[30px] py-2 text-[#ff7f50]"></i>
+          </div>
+          <div>
+            <p class="font-amatic text-2xl font-semibold">OUR MISSION</p>
+            <p class="text-[#5a5a5d] md:w-[400px] font-semibold">
+              To rescue and rehabilitate stray, abandoned, and neglected cats,
+              providing them with proper medical care, nourishment, and a loving
+              environment.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Over View -->
+    <div class="relative h-[180px] flex justify-center items-center">
+      <div class="hidden md:w-[1100px] mx-auto absolute top-16">
+        <div
+          class="flex justify-around gap-16 bg-[#b562a8] p-8 rounded-3xl"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-delay="350"
+        >
+          <div
+            class="border-r-2 border-dashed h-36 border-[#bc72b1] my-auto text-center w-[25%]"
+          >
+            <p class="font-amatic font-extrabold text-8xl text-white">721+</p>
+            <p class="text-white text-sm font-semibold">PET ADOPTED</p>
+          </div>
+
+          <div
+            class="border-r-2 border-dashed h-36 border-[#bc72b1] text-center my-auto w-[25%]"
+          >
+            <p class="font-amatic font-extrabold text-8xl text-white">124+</p>
+            <p class="text-white text-sm font-semibold">HAPPY PET LOVER</p>
+          </div>
+
+          <div
+            class="border-r-2 border-dashed h-36 border-[#bc72b1] text-center my-auto w-[25%]"
+          >
+            <p class="font-amatic font-extrabold text-8xl text-white">51+</p>
+            <p class="text-white text-sm font-semibold">VOLUNTEER</p>
+          </div>
+
+          <div class="w-[25%] text-center">
+            <p class="font-amatic font-extrabold text-8xl text-white">15+</p>
+            <p class="text-white text-sm font-semibold">YEARS OF EXPRINCE</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About-3 -->
+    <div class="flex-col md:flex-row flex justify-around bg-[#faf2e7] py-40">
+      <div
+        class="flex flex-col gap-5"
+        data-aos="fade-right"
+        data-aos-delay="333"
+      >
+        <p
+          class="text-4xl text-center md:text-left font-amatic md:text-6xl font-semibold md:w-[600px] md:leading-[80px]"
+        >
+          OUR TEAM OF VOLUNTEERS IS TRUELY COMMITTED.
+        </p>
+        <p
+          class="text-center md:text-left text-[#5a5a5d] md:w-[500px] font-semibold"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+          tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+        </p>
+        <div class="bg-white p-7 rounded-3xl flex gap-5">
+          <div>
+            <i class="fa-solid fa-award text-[30px] py-2 text-[#ff7f50]"></i>
+          </div>
+          <div>
+            <p class="font-amatic text-2xl font-bold">PROFESSIONAL TRAINER</p>
+            <p class="text-[#5a5a5d] md:w-[500px] font-semibold">
+              Maximus ullamcorper lorem viverra mollis quisque morbi hendrerit
+              elit fermentum mus cubilia
+            </p>
+          </div>
+        </div>
+        <div class="bg-white p-7 rounded-3xl flex gap-5">
+          <div>
+            <i
+              class="fa-solid fa-comment-dots py-2 text-[30px] text-[#ff7f50]"
+            ></i>
+          </div>
+          <div>
+            <p class="font-amatic text-2xl font-semibold">FREE CONSULIATIONS</p>
+            <p class="text-[#5a5a5d] md:w-[500px] font-semibold">
+              Maximus ullamcorper lorem viverra mollis quisque morbi hendrerit
+              elit fermentum mus cubilia
+            </p>
+          </div>
+        </div>
+        <div class="bg-white p-7 rounded-3xl flex gap-5">
+          <div>
+            <i class="fa-solid fa-headset text-[30px] py-2 text-[#ff7f50]"></i>
+          </div>
+          <div>
+            <p class="font-amatic text-2xl font-semibold">
+              24/7 PREMIUM SUPPORTS
+            </p>
+            <p class="text-[#5a5a5d] md:w-[500px] font-semibold">
+              Maximus ullamcorper lorem viverra mollis quisque morbi hendrerit
+              elit fermentum mus cubilia
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center justify-center" data-aos="flip-right">
+        <img
+          class="w-[500px] bg-[url('HomepageMeowville/bg_11.png')] bg-no-repeat bg-center bg-cover"
+          src="HomepageMeowville/img_1-232x300.png"
+        />
+      </div>
+    </div>
+    <!-- Form   -->
+    <div
+      class="flex-col-reverse md:flex-row h-auto flex justify-around relative md:p-20 bg-[url('HomepageMeowville/inside-zooshop-shelves-with-accessories-for-cats.jpg')] bg-no-repeat bg-center w-full md:h-[600px] bg-cover"
+    >
+      <!-- Background Overlay -->
+      <div class="absolute inset-0 bg-black opacity-[0.4]"></div>
+      <!-- Adjust opacity here -->
+      <div class="w-full md:w-[40%] rounded-2xl">
+        <div class="md:absolute bg-white top-0" data-aos="fade-down">
+          <form class="p-6 md:p-16">
+            <p class="font-amatic text-6xl font-extrabold">
+              GET AN APPOINTMENT
+            </p>
+            <p class="text-[#5a5a5d] font-semibold md:w-[450px]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis.
+            </p>
+            <label class="text-[#5a5a5d] font-semibold" for="name">Name</label
+            ><br />
+            <input
+              class="bg-[#f9f1e7] w-[80%] rounded-xl py-2 px-4"
+              type="text"
+              placeholder="Name"
+            /><br />
+            <label class="text-[#5a5a5d] font-semibold" for="email">Email</label
+            ><br />
+            <input
+              class="bg-[#f9f1e7] w-[80%] rounded-xl py-2 px-4"
+              type="email"
+              placeholder="Email"
+            /><br />
+            <label class="text-[#5a5a5d] font-semibold" for="date">Date</label
+            ><br />
+            <input
+              class="bg-[#f9f1e7] rounded-xl py-2 px-4"
+              type="date"
+            /><br />
+            <label class="text-[#5a5a5d] font-semibold" for="time">Time</label
+            ><br />
+            <input
+              class="bg-[#f9f1e7] rounded-xl py-2 px-4"
+              type="time"
+            /><br />
+            <label class="text-[#5a5a5d] font-semibold" for="message"
+              >Message</label
+            ><br />
+            <input
+              class="bg-[#f9f1e7] rounded-xl py-2 px-4 w-[80%] h-28"
+              type="text"
+              placeholder="Message"
+            /><br />
+            <input
+              class="bg-[#bc72b1] w-[80%] rounded-xl my-3 py-2 text-white font-semibold hover:bg-pink-400"
+              type="submit"
+              value="GET AN APPOINTMENTS"
+            />
+          </form>
+        </div>
+      </div>
+
+      <div class="p-11 md:py-16 z-10" data-aos="flip-right">
+        <p
+          class="font-amatic md:w-[600px] leading-[55px] text-4xl font-extrabold text-white z-20"
+        >
+          JOIN OUR VOLUNTEER TEAM AND MAKE A DIFFERENCE IN THE LIVE OF SHELTER
+          CATS.
+        </p>
+        <p
+          class="w-full md:py-7 border-b-2 border-dashed my-6 md:w-[565px] font-semibold text-white z-10"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+          tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+        </p>
+        <p class="text-white">
+          <i class="fa-solid fa-check text-[20px] text-[#ff7f50] z-10"></i>
+          Tristique felis molestie arcu lacus
+        </p>
+        <p class="text-white">
+          <i class="fa-solid fa-check text-[20px] text-[#ff7f50]"></i>
+          Consectetuer nec sem suscipit integer ut
+        </p>
+        <p class="text-white">
+          <i class="fa-solid fa-check text-[20px] text-[#ff7f50]"></i> Aptent
+          tellus cubilia velit
+        </p>
+        <p class="text-white">
+          <i class="fa-solid fa-check text-[20px] text-[#ff7f50]"></i> Aptent
+          tellus cubilia velit
+        </p>
+        <p class="text-white">
+          <i class="fa-solid fa-check text-[20px] text-[#ff7f50]"></i> Diam orci
+          rhoncus vulputate
+        </p>
+      </div>
+    </div>
+    <!-- Review -->
+    <div
+      class="bg-[#f9f9f9] pt-56 pb-40 bg-[url('HomepageMeowville/dashed.png')] bg-no-repeat bg-center w-full px-5 md:px-32"
+    >
+      <p
+        class="text-[#ff7f50] text-center font-bold py-4"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+      >
+        TESTIMONIAL
+      </p>
+      <p
+        class="font-amatic text-3xl md:text-6xl text-center font-semibold"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+      >
+        CAT LOVER FEEDBACK
+      </p>
+      <p
+        class="w-full text-[#5a5a5d] font-semibold text-center py-7"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
+        luctus nec<br />
+        ullamcorper mattis, pulvinar dapibus leo.
+      </p>
+      <div class="swiper mySwiper">
+        <div
+          class="swiper-wrapper"
+          data-aos="zoom-in-up"
+          data-aos-duration="1000"
+        >
+          <div class="swiper-slide bg-[#f9f1e7] p-9 rounded-3xl">
+            <p class="text-center font-amatic text-3xl font-bold">
+              SARA JOHNSON
+            </p>
+            <p class="text-[#ff7f50] text-center font-bold text-xs py-2">
+              BANDUNG
+            </p>
+            <p class="py-5 text-center">
+              <i class="fa-solid fa-star text-[#ff7f50]"></i
+              ><i class="fa-solid fa-star text-[#ff7f50]"></i
+              ><i class="fa-solid fa-star text-[#ff7f50]"></i
+              ><i class="fa-solid fa-star text-[#ff7f50]"></i
+              ><i class="fa-solid fa-star text-[#ff7f50]"></i>
+            </p>
+            <p class="text-[#84807b] font-semibold text-center">
+              I can't thank enough for matching me with my sweet cat,Oliver. The
+              dedications and care they showed thoughout the addoptions proccess
+              were exceptional. Oliver has became a cherished member of our
+              family, and I'm grateful to Meowville for their commitment to
+              finding forever bhomesw for these deserving cats.
+            </p>
+          </div>
+          <div class="swiper-slide bg-[#f9f1e7] p-9 rounded-3xl">
+            <p class="font-amatic text-3xl text-center font-bold">DEVID MATT</p>
+            <p class="text-[#ff7f50] text-center font-bold text-xs py-2">
+              MEDAN
+            </p>
+            <p class="py-5 text-center">
+              <i class="fa-solid fa-star text-[#ff7f50]"></i
+              ><i class="fa-solid fa-star text-[#ff7f50]"></i
+              ><i class="fa-solid fa-star text-[#ff7f50]"></i
+              ><i class="fa-solid fa-star text-[#ff7f50]"></i
+              ><i class="fa-solid fa-star text-[#ff7f50]"></i>
+            </p>
+            <p class="text-[#84807b] font-semibold text-center">
+              I recently adopted my cat,Max, form Meowville, and I couldn't be
+              happier. The shelter's professionalism and genuine concern for the
+              cat's well bring impressed me. Max is a perfect fit for our family
+              and I appreiciate the on going support and resourse meowville
+              provides. They truely make a differences in the lives of these
+              beautiful creatures.
+            </p>
+          </div>
+          <div class="swiper-slide bg-[#f9f1e7] p-9 rounded-3xl">
+            <p class="font-amatic text-3xl text-center font-bold">
+              EMILY MORALES
+            </p>
+            <p class="text-[#ff7f50] text-center font-bold text-xs py-2">
+              JAKARTA
+            </p>
+            <p class="py-5 text-center">
+              <i class="fa-solid fa-star text-[#ff7f50]"></i
+              ><i class="fa-solid fa-star text-[#ff7f50]"></i
+              ><i class="fa-solid fa-star text-[#ff7f50]"></i
+              ><i class="fa-solid fa-star text-[#ff7f50]"></i
+              ><i class="fa-solid fa-star text-[#ff7f50]"></i>
+            </p>
+            <p class="text-[#84807b] font-semibold text-center">
+              Adopting from Meowville was the best decision I ever made. My cat,
+              Whiskers, has brought so much joy and love into my life. The
+              adoption process was smooth, and the team at Meowville provided
+              all the support and guidance I needed. I highly recommend them to
+              anyone looking to find their purrfect companion.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Finishing -->
+    <div
+      class="flex-col gap-10 md:flex-row flex justify-around py-12 px-9 bg-[#f9f1e7]"
+    >
+      <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        <img
+          src="HomepageMeowville/Logo_meowville-q79dyqkzjwwdq52e2j15orz4o5oj68plnsvfchcjr4.png"
+        />
+        <p class="text-[#615f5f] font-semibold py-5 md:w-[420px]">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+          tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+        </p>
+        <p class="flex gap-7">
+          <i class="fa-brands fa-facebook-f text-[#4d4b4b]"></i
+          ><i class="fa-brands fa-instagram text-[#4d4b4b]"></i
+          ><i class="fa-brands fa-twitter text-[#4d4b4b]"></i
+          ><i class="fa-brands fa-youtube text-[#4d4b4b]"></i>
+        </p>
+      </div>
+      <div class="flex gap-24">
+        <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+          <p class="font-bold py-3 text-[#4d4b4b]">Services</p>
+          <p class="text-[#615f5f]">Cat Breeder</p>
+          <p class="text-[#615f5f]">Cat Adoption</p>
+          <p class="text-[#615f5f]">Pet Care</p>
+          <p class="text-[#615f5f]">Pet Training</p>
+          <p class="text-[#615f5f]">Rehabilitation</p>
+          <p class="text-[#615f5f]">Cat Shelter</p>
+        </div>
+        <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+          <p class="font-bold py-3 text-[#4d4b4b]">Company</p>
+          <p class="text-[#615f5f]">About us</p>
+          <p class="text-[#615f5f]">Our Team</p>
+          <p class="text-[#615f5f]">Careers</p>
+          <p class="text-[#615f5f]">News & Article</p>
+          <p class="text-[#615f5f]">Legal Notices</p>
+        </div>
+      </div>
+      <div
+        class="flex flex-wrap w-[400px] gap-3"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+      >
+        <img
+          class="w-[120px] h-[120px] rounded-2xl"
+          src="HomepageMeowville/a-wondering-cat.jpg"
+        />
+        <img
+          class="w-[120px] h-[120px] rounded-2xl"
+          src="HomepageMeowville/close-up-shot-of-scottish-fold-cat-lying-on-windowsill-and-looking-at-camera.jpg"
+        />
+        <img
+          class="w-[120px] h-[120px] rounded-2xl"
+          src="HomepageMeowville/little-cat.jpg"
+        />
+        <img
+          class="w-[120px] h-[120px] rounded-2xl"
+          src="HomepageMeowville/cute-and-grey-cat-lying-on-bright-yellow-couch-in-apartment.jpg"
+        />
+        <img
+          class="w-[120px] h-[120px] rounded-2xl"
+          src="HomepageMeowville/cat.jpg"
+        />
+        <img
+          class="w-[120px] h-[120px] rounded-2xl"
+          src="HomepageMeowville/ragamuffin-cat.jpg"
+        />
+      </div>
+    </div>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"
+  ></script>
+  <!-- <script src="./src/main.js"></script> -->
+  <script src="./dist/main.js"></script>
+  <script src="./dist/aos.js"></script>
+</html>

@@ -1,0 +1,1 @@
+(()=>{var e=new Swiper(".mySwiper",{spaceBetween:30,slidesPerView:1,breakpoints:{640:{slidesPerView:1},768:{slidesPerView:2},1024:{slidesPerView:2}}}),i=new Swiper(".sliderSwiper",{slidesPerView:1,centeredSlides:!0,spaceBetween:0,autoplay:{delay:2500,disableOnInteraction:!1}});AOS.init();})();
